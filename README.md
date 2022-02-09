@@ -15,7 +15,7 @@ ng add @angular/material
 
 ------------------------------------------------
 
-back:
+back com json:
 
 install json-server 
 npm i json-server
