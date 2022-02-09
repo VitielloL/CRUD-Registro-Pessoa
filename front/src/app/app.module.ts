@@ -26,6 +26,7 @@ import { NavComponent } from './components/templates/nav/nav.component';
 // Componentes
 import { PessoasComponent } from './components/views/pessoas/pessoas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BookComponent } from './components/views/book/book.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FooterComponent,
     NavComponent,
     PessoasComponent,
+    BookComponent,
   ],
   imports: [
     BrowserModule,
