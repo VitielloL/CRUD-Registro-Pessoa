@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>
+        Editar Animal
+    </mat-card-title>
+
+    <form >
+        <mat-form-field class="input">
+            <input matInput placeholder="Nome" [(ngModel)]="pessoa.nome" name="nome">
+        </mat-form-field>
+
+        <mat-form-field class="input">
+            <input matInput placeholder="Profissão" [(ngModel)]="pessoa.prof" name="prof">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Local de trabalho - exemplo: RJ, Ilha do Governador"  [(ngModel)]="pessoa.local" name="local">
+        </mat-form-field>    
+    </form>
+
+    <button mat-raised-button (click)="update()" color="primary">
+        Editar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

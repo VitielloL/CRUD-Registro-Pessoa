@@ -1,0 +1,21 @@
+h2 {
+  font-weight: 300;
+}
+
+.palavraImportante {
+  color: #941a1a;
+}
+
+.organizar {
+  display: flex;
+  justify-content: space-around;
+
+  .botaoPrincipal {
+    background-color: #941a1a;
+    color: aliceblue;
+  }
+  .botaoCancelar {
+    background-color: #424242;
+    color: aliceblue;
+  }
+}

@@ -1,0 +1,57 @@
+<mat-card class="cardTable mat-elevation-z3">
+    <mat-card-title class="title">Utilizando Json</mat-card-title>
+  </mat-card>
+
+  <button mat-raised-button routerLink="/createpessoa" class="cadastrar" color="primary">
+    Cadastrar Pessoa
+  </button>
+  
+  <table mat-table [dataSource]="pessoas" class="mat-elevation-z8">  
+ 
+    <!-- Name Column -->
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef>Nome</th>
+      <td mat-cell *matCellDef="let row">{{row.nome}}</td>
+    </ng-container>
+  
+    <!-- Prof Column -->
+    <ng-container matColumnDef="prof">
+      <th mat-header-cell *matHeaderCellDef>Profissão</th>
+      <td mat-cell *matCellDef="let row">{{row.prof}}</td>
+    </ng-container>
+  
+     <!-- Local Column -->
+     <ng-container matColumnDef="local">
+      <th mat-header-cell *matHeaderCellDef>Local aonde trabalha</th>
+      <td mat-cell *matCellDef="let row">{{row.local}}</td>
+    </ng-container>
+  
+      <!-- Detal Column -->
+      <ng-container matColumnDef="detal">
+        <th mat-header-cell *matHeaderCellDef>Ver mais</th>
+      
+        <td mat-cell *matCellDef="let row">  <button mat-raised-button routerLink="/detal/{{row.id}}" class="Ver mais" color="primary">+</button></td>
+      </ng-container>
+    
+     <!-- Action Column-->
+     <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef>Ações</th>
+      <td mat-cell *matCellDef="let row">
+
+          <a  routerLink="/editpessoa/{{row.id}}" class="edit">
+              <i class="material-icons"> 
+                  edit
+              </i>
+          </a>
+
+          <a routerLink="/deletepessoa/{{row.id}}" class="delete">
+              <i class="material-icons">
+                  delete
+              </i>
+          </a>
+      </td>
+  </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>

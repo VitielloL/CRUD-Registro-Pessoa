@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title>
+        Novo Cadastro
+    </mat-card-title>
+
+    <form >
+        <mat-form-field class="input">
+            <input matInput placeholder="Nome" [(ngModel)]="pessoas.nome" name="nome">
+        </mat-form-field>
+
+        <mat-form-field class="input">
+            <input matInput placeholder="Profissão" [(ngModel)]="pessoas.prof" name="prof">
+        </mat-form-field>
+
+
+        <mat-form-field>
+            <input matInput placeholder="Local de trabalho - exemplo: RJ, Ilha do Governador"  [(ngModel)]="pessoas.local" name="local">
+        </mat-form-field>    
+    </form>
+
+    <button mat-raised-button (click)="createPessoa()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -1,0 +1,19 @@
+<mat-card>
+    <form >
+        <mat-form-field class="input">
+            <input matInput placeholder="Nome" [(ngModel)]="pessoa.nome" name="nome"  disabled>
+        </mat-form-field>
+
+        <mat-form-field class="input">
+            <input matInput placeholder="Profissão" [(ngModel)]="pessoa.prof" name="prof"  disabled>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Local de trabalho- exemplo: RJ, Ilha do Governador"  [(ngModel)]="pessoa.local" name="local"  disabled>
+        </mat-form-field>    
+    </form>
+
+    <button mat-raised-button (click)="voltar()" color="primary">
+        Voltar
+    </button>
+</mat-card>
