@@ -5,6 +5,7 @@ Cadastro de Pessoa e Profissão. Frontend em Angular + Backend teste utilizando 
 -------------------------------------------------
 
 front:
+
 instal angular and material angular
 npm i
 or
@@ -15,5 +16,6 @@ ng add @angular/material
 ------------------------------------------------
 
 back:
+
 install json-server 
 npm i json-server
