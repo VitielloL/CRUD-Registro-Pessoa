@@ -39,7 +39,8 @@ export class DeleteComponent implements OnInit {
     this.router.navigate(['/']);
   }
 
-  openDialog() {
-    this.dialog.open(ModaldeleteComponent);
+  openDialog(id: any) {
+    const modalRef = this.dialog.open(ModaldeleteComponent);
+    modalRef.componentInstance.id = id;
   }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Pessoa, PessoasService } from '../../pessoas.service';
@@ -9,6 +9,11 @@ import { Pessoa, PessoasService } from '../../pessoas.service';
   styleUrls: ['./modaldelete.component.scss'],
 })
 export class ModaldeleteComponent implements OnInit {
+  @Input()
+  id: any;
+
+  pessoa: Pessoa;
+
   constructor(
     private router: Router,
     private pessoaService: PessoasService,
@@ -16,10 +21,8 @@ export class ModaldeleteComponent implements OnInit {
     public dialogRef: MatDialogRef<ModaldeleteComponent>
   ) {}
 
-  pessoa: Pessoa;
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id') as string;
-    this.pessoaService.readById(id).subscribe((pessoa) => {
+    this.pessoaService.readById(this.id).subscribe((pessoa) => {
       this.pessoa = pessoa;
     });
   }

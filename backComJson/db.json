@@ -1,12 +1,6 @@
 {
   "pessoas": [
     {
-      "id": 1,
-      "nome": "Lucas Vitiello",
-      "prof": "programador",
-      "local": "Rj, Ilha do Governador"
-    },
-    {
       "id": 2,
       "nome": "Alexandra silva",
       "prof": "medico",
@@ -23,12 +17,6 @@
       "prof": "Nutricionista",
       "local": "RJ, Meier",
       "id": 4
-    },
-    {
-      "nome": "123",
-      "prof": "123",
-      "local": "123",
-      "id": 5
     }
   ]
 }
