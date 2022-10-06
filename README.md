@@ -1,21 +1,21 @@
 # CRUD-Registro-Pessoa
 
-Cadastro de Pessoa e Profissão. Frontend em Angular + Backend teste utilizando apenas Json
+CRUD de Pessoa/Profisão utilizando Angular + Json
 
 -------------------------------------------------
 
 front:
 
-instal angular and material angular
 npm i
-or
+
 npm install -g @angular/cli
-+
+
 ng add @angular/material
 
 ------------------------------------------------
 
-back com json:
+json:
 
 install json-server 
+
 npm i json-server
