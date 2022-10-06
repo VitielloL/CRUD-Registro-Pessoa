@@ -4,7 +4,7 @@ CRUD de Pessoa/Profisão utilizando Angular + Json
 
 -------------------------------------------------
 
-front:
+<i>Frontend:</i>
 
 npm i
 
@@ -14,7 +14,7 @@ ng add @angular/material
 
 ------------------------------------------------
 
-json:
+<i>Json:</>
 
 install json-server 
 
