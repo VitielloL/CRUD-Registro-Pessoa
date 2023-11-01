@@ -1,6 +1,6 @@
 # CRUD-Registro-Pessoa
 
-CRUD de Pessoa/Profisão utilizando Angular + Json
+CRUD de Pessoa/Profisão utilizando Angular + Json.
 
 -------------------------------------------------
 
